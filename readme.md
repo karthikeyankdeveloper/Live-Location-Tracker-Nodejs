@@ -1,4 +1,7 @@
+LIVE LOCATION TRACKER
+
 ------------ INSTALLATION REQUIREMENTS --------------
+
 node init -y
 
 1.EXPRESS - (npm i express) - used for server.
