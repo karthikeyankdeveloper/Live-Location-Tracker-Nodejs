@@ -20,5 +20,10 @@ node init -y
 5.for post call - app.use(express.urlencoded({extended:false})); //add this in top after var app = express();
 
 
+<<<<<<< HEAD
 by Karthikeyan K
 
+=======
+
+--karthikeyan k
+>>>>>>> f59ebc69bdc4a6002d7ecf440da7421f75fc4218
