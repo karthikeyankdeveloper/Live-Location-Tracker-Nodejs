@@ -1,0 +1,374 @@
+@media screen and (max-width:510px) {
+
+    .signup{
+        /* border: 2px solid red; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .insider{
+        margin: 10px 0px;
+        /* border: 2px solid green; */
+        display: flex;
+    }
+    
+    .signup_first{
+        display: none;
+    }
+    
+    .signup_second{
+        animation: rightanim 2s ease-in-out ;
+        /* border: 2px solid red; */
+        border-radius: 20px;
+        text-align: center;
+        margin: 5px;
+        height: 400px;
+        width: 310px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .signup_second h2{
+        margin: 15px 0px;
+        font-weight: 400;
+    }
+    .input_class{
+        /* border: 2px solid red; */
+        margin: 15px 10px;
+    }
+    .input_class input{
+        width: 230px;
+        height: 23px;
+        padding: 7px 8px;
+        border: none;
+        border-bottom: 2px solid rgb(79, 81, 79);
+        outline: none;
+    }
+
+    .input_class input:focus{
+        outline: none;
+    }
+
+    .input_checkbox{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+    .input_checkbox p{
+        font-weight: 100;
+        color: rgb(58, 56, 56);
+    }
+
+    #checkbox{
+        width:20px;
+        height: 16px;
+    }
+
+    #login_button{
+        margin-top: 15px;
+        border: none;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    #login_button:hover{
+        transition: .2s;
+        background-color: rgb(8, 92, 8);
+        padding: 10px 23px;
+    }
+
+    @keyframes rightanim {
+
+        0%{
+            transform: translateX(-400px);
+        }
+
+        80%{
+            transform: translateX(20px);
+        }
+        
+    }
+
+}
+
+
+@media screen and (min-width:510px) and (max-width:750px) {
+
+    .signup{
+        /* border: 2px solid red; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .insider{
+        margin: 10px 0px;
+        /* border: 2px solid green; */
+        display: flex;
+    }
+    
+    .signup_first{
+        display: none;
+    }
+    
+    .signup_second{
+        animation: rightanim 2s ease-in-out ;
+        /* border: 2px solid red; */
+        border-radius: 20px;
+        text-align: center;
+        margin: 5px;
+        height: 400px;
+        width: 310px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .signup_second h2{
+        margin: 15px 0px;
+        font-weight: 400;
+    }
+    .input_class{
+        /* border: 2px solid red; */
+        margin: 15px 10px;
+    }
+    .input_class input{
+        width: 230px;
+        height: 23px;
+        padding: 7px 8px;
+        border: none;
+        border-bottom: 2px solid rgb(79, 81, 79);
+        outline: none;
+    }
+
+    .input_class input:focus{
+        outline: none;
+    }
+
+    .input_checkbox{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+    .input_checkbox p{
+        font-weight: 100;
+        color: rgb(58, 56, 56);
+    }
+
+    #checkbox{
+        width:20px;
+        height: 16px;
+    }
+
+    #login_button{
+        margin-top: 15px;
+        border: none;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    #login_button:hover{
+        transition: .2s;
+        background-color: rgb(8, 92, 8);
+        padding: 10px 23px;
+    }
+
+    @keyframes rightanim {
+
+        0%{
+            transform: translateX(-400px);
+        }
+
+        80%{
+            transform: translateX(20px);
+        }
+        
+    }
+}
+
+
+@media screen and (min-width:750px) {
+
+    .signup{
+        /* border: 2px solid red; */
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .insider{
+        margin: 10px 0px;
+        /* border: 2px solid green; */
+        width: 750px;
+        display: flex;
+    }
+    
+    .signup_first{
+        animation: leftanim 2s ease-in-out;
+        color: rgb(5, 88, 74);
+        padding: 0px 20px;
+        /* border: 2px solid red; */
+        width: 50%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .signup_second{
+        animation: rightanim 2s ease-in-out ;
+        /* border: 2px solid red; */
+        border-radius: 20px;
+        text-align: center;
+        width: 50%;
+        height: 400px;
+        margin: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .signup_second h2{
+        margin: 15px 0px;
+        font-weight: 400;
+    }
+    .input_class{
+        /* border: 2px solid red; */
+        margin: 15px 10px;
+    }
+    .input_class input{
+        width: 230px;
+        height: 23px;
+        padding: 7px 8px;
+        border: none;
+        border-bottom: 2px solid rgb(79, 81, 79);
+        outline: none;
+    }
+
+    .input_class input:focus{
+        outline: none;
+    }
+
+    .input_checkbox{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+    }
+    .input_checkbox p{
+        font-weight: 100;
+        color: rgb(58, 56, 56);
+    }
+
+    #checkbox{
+        width:20px;
+        height: 16px;
+    }
+
+    #login_button{
+        margin-top: 15px;
+        border: none;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    #login_button:hover{
+        transition: .2s;
+        background-color: rgb(8, 92, 8);
+        padding: 10px 23px;
+    }
+
+
+    @keyframes leftanim {
+
+        0%{
+            transform: translateX(-400px);
+        }
+
+        80%{
+            transform: translateX(30px);
+        }
+        
+    }
+    @keyframes rightanim {
+
+        0%{
+            transform: translateX(400px);
+        }
+
+        80%{
+            transform: translateX(-30px);
+        }
+        
+    }
+
+
+
+
+}
+
+
+
+#message{
+    display: none;
+    background-color: rgb(251, 249, 248);
+    color: black;
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 300px;
+    height: 125px;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#message h4{
+    margin: 0px;
+    margin-top: 5px;
+}
+#message p{
+    margin: 0px;
+    margin-left: 25px;
+    font-weight: 100;
+    font-size: 13px;
+}
+#message div{
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+}
+#message div button{
+    width: 50px;
+    height: 28px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#message div button:hover{
+    transition: .5s;
+    background-color: rgb(8, 92, 8);
+}
+
+@keyframes topbot{
+    0%{
+        transform: translateY(-200px);
+    }
+    80%{
+        transform: translateY(10px);
+    }
+}

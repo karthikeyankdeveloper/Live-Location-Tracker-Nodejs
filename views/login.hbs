@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Page Css -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Lottie Files -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" href="/raw/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- For PreLoader -->
+    <script>
+        $(window).on('load', setTimeout(function () {
+            $(".preloader").fadeOut(1000);
+            $(".content_page").fadeIn(1000);
+        }, 1000));
+    </script>
+
+    {{#if session.user}}
+        <script>location.replace('/');</script>
+    {{else if session.admin}}
+        <script>location.replace('/');</script>
+    {{/if}}
+
+    <div class="preloader">
+        <lottie-player src="lottie/loading.json" background="transparent" speed="2.5" style="width: 50px; height: 50px;"
+            loop autoplay>
+        </lottie-player>
+    </div>
+
+    <section class="content_page">
+        <!-- Floater -->
+        <div class="floater">
+            <div>
+                <i class="fa-solid fa-headset"></i>
+            </div>
+        </div>
+
+        <div class="message_landing_page">
+            <h3>We're open and available for takeaway & delivery. <a href="buy.html">Order Now</a></h3>
+        </div>
+
+        <!-- HEADER-->
+        <header>
+            <nav>
+                <div class="icons">
+                    <img src="raw/logo.png" alt="" width="50px" height="53px">
+                    <h3 style="font-weight: 500; padding-top: 5px;"> &nbsp;&nbsp;Tracker</h3>
+                </div>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a class="active">LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <div class="signup">
+
+            <div class="insider">
+
+                <div class="signup_first">
+                    <h1 style="text-align: center; letter-spacing: 2px; margin: 2px;"> <i
+                            class="fa-solid fa-right-to-bracket"></i> Welcome back !</h1>
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_akio2kni.json"
+                        background="transparent" speed="1" style="width: 220px; height: 220px; position: relative;" loop
+                        autoplay></lottie-player>
+                    <p style="width: 250px; text-align: justify;">Welcome back! Log in now and continue your journey
+                        with us.Access all your favorite features with just one login...</p>
+                </div>
+
+                <div class="signup_second">
+
+                    <h2>Login</h2>
+                    <hr>
+
+                    <div>
+                        <form action="/addlogin" onsubmit="return validate()" method="post">
+                            <div class="input_class"><input type="email" name="login_email" id="login_email"
+                                    placeholder="Email"></div>
+                            <div class="input_class"><input type="password" name="login_pass" id="login_pass"
+                                    placeholder="Password"></div>
+                            <div class="input_checkbox"><input type="checkbox" name="checkbox" id="checkbox"
+                                    onclick="show_pass()">
+                                <p>show password</p>
+                            </div>
+                            <button type="submit" id="login_button">Login</button>
+                        </form>
+                    </div>
+
+                    <p style="margin-top: 30px;">Don't have an account <a href="/signup">signup</a></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="message">
+            <h4>&nbsp;&nbsp;&nbsp;Message !</h4>
+            <hr>
+            <p id="message_placeholder"></p>
+            <div>
+                <button onclick="disable_message()">OK</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Page Script -->
+    <script type="text/javascript" src="js/login.js"></script>
+
+    {{#if msg}}
+        <script>show_message('{{msg}}');</script>
+    {{/if}}
+
+</body>
+
+</html>

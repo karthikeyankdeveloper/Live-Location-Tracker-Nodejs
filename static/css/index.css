@@ -1,0 +1,981 @@
+/* Mobile */
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    transition: .5s;
+    text-decoration: underline;
+    color: rgb(7, 118, 3);
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:510px) {
+    .top_bar_landing{
+        height: 350px;
+    }
+
+    /* First Half */
+    .first_50_top_bar_landing{
+        text-align: center;
+    }
+    .first_50_top_bar_landing img{
+        display: none;
+    }
+    .first_50_top_bar_landing h1{
+        color: black;
+        margin: 0px 15px;
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_two{
+        color: rgb(6, 147, 22);
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_one{
+        font-size: 60px;
+        font-weight: 450;
+    }
+
+
+
+    /* Second half */
+    
+    .second_50_div h3{
+        margin: 15px 0px;
+    }
+
+    .second_50_top_bar_landing form{
+        text-align: center;
+    }
+
+    .second_50_top_bar_landing form input{
+        padding: 10px 25px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(41, 103, 5);
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .second_50_top_bar_landing form button{
+        margin-top: 20px;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /* Description */
+    /* .content_description{
+        border: 2px solid red;
+    } */
+    
+    .content_description_top_h3{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 28px;
+        color: rgb(20, 20, 20);
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+    .content_description_top_p{
+        margin: 0px;
+        padding-top: 5px;
+        text-align: center;
+        /* border: 2px solid red; */
+        color: rgb(53, 50, 50);
+    }
+
+
+    /* Card */
+    .how_it_work{
+        /* border: 2px solid red; */
+        padding: 30px 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how_work_card{
+        height: 260px;
+        width: 210px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .how_work_arrow i{
+        /* transform: rotate(90deg); */
+        font-size: 25px;
+        color: rgb(66, 121, 137);
+        margin: 20px;
+    }
+
+    .how_work_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    
+    .how_work_desc{
+        text-align: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_desc p{
+        /* text-align: center; */
+        font-size: 13px;
+        /* text-align: justify; */
+        padding: 0px 20px;
+    }
+    /* card end */
+
+
+    /* Footer */
+    .footer{
+        margin-top: 20px;
+        /* border: 2px solid red; */
+        /* height: 300px; */
+        background-color: rgb(240, 238, 234);
+        /* display: flex; */
+    }
+
+    
+
+    .footer_logo{
+       display: none; 
+    }
+
+
+
+
+    .AtrixDev_footer{
+        /* border: 2px solid green; */
+        /* width: 25%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .AtrixDev_footer h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .AtrixDev_footer div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+
+    .Services{
+        /* border: 2px solid green; */
+        /* width: 25%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Services h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .Services div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+    .follow{
+        /* border: 2px solid green; */
+        width: 50%;
+        display: none;
+    }
+
+    .extra_for_mobile{
+        height: 70px;
+    }
+    
+
+}
+
+/* Tab */
+@media screen and (min-width:510px) and (max-width:750px) {
+    .top_bar_landing{
+        height: 300px;
+    }
+
+    /* First Half */
+    .first_50_top_bar_landing{
+        text-align: center;
+    }
+    .first_50_top_bar_landing img{
+        display: none;
+    }
+    .first_50_top_bar_landing h1{
+        color: black;
+        margin: 0px 15px;
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_two{
+        color: rgb(6, 147, 22);
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_one{
+        font-size: 60px;
+        font-weight: 450;
+    }
+
+
+
+    /* Second half */
+    
+    .second_50_div h3{
+        margin: 15px 0px;
+    }
+
+    .second_50_top_bar_landing form{
+        text-align: center;
+    }
+
+    .second_50_top_bar_landing form input{
+        padding: 10px 25px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(41, 103, 5);
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .second_50_top_bar_landing form button{
+        margin-top: 20px;
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /* Description */
+    /* .content_description{ */
+        /* border: 2px solid red; */
+        /* height: 2000px; */
+    /* } */
+    
+    .content_description_top_h3{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 28px;
+        color: rgb(20, 20, 20);
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+    .content_description_top_p{
+        margin: 0px;
+        padding-top: 5px;
+        text-align: center;
+        /* border: 2px solid red; */
+        color: rgb(53, 50, 50);
+    }
+
+
+    /* Card */
+    .how_it_work{
+        /* border: 2px solid red; */
+        padding: 30px 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how_work_card{
+        height: 260px;
+        width: 210px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .how_work_arrow i{
+        /* transform: rotate(90deg); */
+        font-size: 25px;
+        color: rgb(66, 121, 137);
+        margin: 20px;
+    }
+
+    .how_work_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    
+    .how_work_desc{
+        text-align: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_desc p{
+        /* text-align: center; */
+        font-size: 13px;
+        /* text-align: justify; */
+        padding: 0px 20px;
+    }
+    /* card end */
+
+    /* Footer */
+    .footer{
+        margin-top: 20px;
+        /* border: 2px solid red; */
+        height: 300px;
+        background-color: rgb(240, 238, 234);
+        display: flex;
+    }
+
+    
+
+    .footer_logo{
+       display: none; 
+    }
+
+
+
+
+    .AtrixDev_footer{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .AtrixDev_footer h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .AtrixDev_footer div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+
+    .Services{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Services h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .Services div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+    .follow{
+        /* border: 2px solid green; */
+        width: 50%;
+    }
+    .follow h3{
+        margin-left: 60px;
+        text-decoration: underline;
+        margin-top: 50px;
+        font-weight: 400;
+    }
+    .follow div{
+        margin-left: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .follow div i{
+        margin: 0px 15px;
+        font-size: 20px;
+    }
+    
+}
+
+/* Tab-large */
+@media screen and (min-width:750px) and (max-width:1000px){
+    .top_bar_landing{
+        height: 300px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* First Half */
+    .first_50_top_bar_landing{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        /* border: 2px solid red; */
+    }
+    .first_50_top_bar_landing img{
+        display: none;
+    }
+    .first_50_top_bar_landing h1{
+        color: black;
+        margin: 0px 15px;
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_two{
+        color: rgb(6, 147, 22);
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_one{
+        font-size: 60px;
+        font-weight: 450;
+    }
+
+
+
+    /* Second half */
+    .second_50_top_bar_landing{
+        width: 50%;
+        /* border: 2px solid red; */
+    }
+    
+
+    .second_50_div{
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .second_50_top_bar_landing form{
+        display: flex;
+    }
+
+    .second_50_top_bar_landing form input{
+        padding: 10px 25px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(41, 103, 5);
+        color: black;
+        text-transform: uppercase;
+    }
+    .second_50_top_bar_landing form button{
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .second_50_top_bar_landing form button:hover{
+        transition: .3s;
+        background-color: rgb(3, 63, 3);
+    }
+
+    /* Description */
+    /* .content_description{ */
+        /* border: 2px solid red; */
+        /* height: 2000px; */
+    /* } */
+    
+    .content_description_top_h3{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 28px;
+        color: rgb(20, 20, 20);
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+    .content_description_top_p{
+        margin: 0px;
+        padding-top: 5px;
+        text-align: center;
+        /* border: 2px solid red; */
+        color: rgb(53, 50, 50);
+    }
+
+
+    /* Card */
+    .how_it_work_sub{
+        /* border: 2px solid red; */
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how_work_card{
+        height: 290px;
+        width: 210px;
+        /* border: 2px solid green; */
+        margin: 0px 10px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .how_work_arrow i{
+        font-size: 25px;
+        color: rgb(66, 121, 137);
+        margin: 5px;
+    }
+
+    .how_work_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        /* border: 2px solid red; */
+    }
+    .how_work_img img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    
+    .how_work_desc{
+        text-align: center;
+        height: 60%;
+        /* border: 2px solid red; */
+    }
+    .how_work_desc p{
+        /* text-align: center; */
+        font-size: 13px;
+        /* text-align: justify; */
+        padding: 0px 20px;
+    }
+    /* card end */
+
+
+
+
+    /* Footer */
+    .footer{
+        margin-top: 20px;
+        /* border: 2px solid red; */
+        height: 300px;
+        background-color: rgb(240, 238, 234);
+        display: flex;
+    }
+
+    
+
+    .footer_logo{
+       display: none; 
+    }
+
+
+
+
+    .AtrixDev_footer{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .AtrixDev_footer h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .AtrixDev_footer div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+
+    .Services{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Services h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .Services div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+    .follow{
+        /* border: 2px solid green; */
+        width: 50%;
+    }
+    .follow h3{
+        margin-left: 60px;
+        text-decoration: underline;
+        margin-top: 50px;
+        font-weight: 400;
+    }
+    .follow div{
+        margin-left: 60px;
+    }
+    .follow div i{
+        margin: 0px 15px;
+        font-size: 20px;
+    }
+
+    
+    
+}
+
+/* Laptop */
+@media screen and (min-width:1000px) {
+
+    .top_bar_landing{
+        height: 300px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* First Half */
+    .first_50_top_bar_landing{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        /* border: 2px solid red; */
+    }
+    .first_50_top_bar_landing img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+    }
+    .first_50_top_bar_landing h1{
+        color: black;
+        margin: 0px 15px;
+        font-size: 35px;
+        /* font-weight: 100; */
+    }
+    .first_50_top_bar_landing .span_two{
+        color: rgb(6, 147, 22);
+        font-size: 35px;
+    }
+    .first_50_top_bar_landing .span_one{
+        font-size: 60px;
+        font-weight: 450;
+    }
+
+
+
+    /* Second half */
+    .second_50_top_bar_landing{
+        width: 50%;
+        /* border: 2px solid red; */
+    }
+    
+
+    .second_50_div{
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .second_50_top_bar_landing form{
+        display: flex;
+    }
+
+    .second_50_top_bar_landing form input{
+        padding: 10px 25px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(41, 103, 5);
+        color: black;
+        text-transform: uppercase;
+    }
+    .second_50_top_bar_landing form button{
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: rgb(3, 114, 3);
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+    .second_50_top_bar_landing form button:hover{
+        transition: .3s;
+        background-color: rgb(3, 63, 3);
+    }
+
+
+
+
+    /* Description */
+    /* .content_description{ */
+        /* border: 2px solid red; */
+        /* height: 2000px; */
+    /* } */
+    
+    .content_description_top_h3{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 28px;
+        color: rgb(20, 20, 20);
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+    .content_description_top_p{
+        margin: 0px;
+        padding-top: 5px;
+        text-align: center;
+        /* border: 2px solid red; */
+        color: rgb(53, 50, 50);
+    }
+
+
+    /* Card */
+    .how_it_work_sub{
+        /* border: 2px solid green; */
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how_work_card{
+        cursor: pointer;
+        height: 260px;
+        width: 210px;
+        /* border: 2px solid green; */
+        margin: 0px 10px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    .how_work_arrow i{
+        font-size: 25px;
+        color: rgb(66, 121, 137);
+        margin: 5px;
+    }
+
+    .how_work_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    /* Hover effect other */
+    .how_work_card:hover > .how_work_img img {
+        transition: .3s;
+        width: 105px;
+        height: 105px;
+    }
+
+
+    
+    .how_work_desc{
+        text-align: center;
+        height: 50%;
+        /* border: 2px solid red; */
+    }
+    .how_work_desc p{
+        /* text-align: center; */
+        font-size: 13px;
+        /* text-align: justify; */
+        padding: 0px 20px;
+    }
+    /* card end */
+
+
+
+
+    /* Footer */
+    .footer{
+        margin-top: 20px;
+        /* border: 2px solid red; */
+        height: 300px;
+        background-color: rgb(240, 238, 234);
+        display: flex;
+    }
+
+    
+
+    .footer_logo{
+        /* border: 2px solid green; */
+        width: 40%;
+        display: flex;
+        align-items: center;        
+    }
+
+    .footer_logo_sub{
+        /* border: 2px solid green; */
+        margin: 0px 10px;
+    }
+
+    .footer_logo_sub p{
+        color: rgb(44, 41, 41);
+        text-align: justify;
+        /* border: 2px solid red; */
+        margin-left: 11px;
+        margin-right: 5px;
+    }
+    .footer_logo_sub span{
+        font-size: 11px;
+        color: rgb(68, 59, 47);
+        margin-left: 11px;
+    }
+    
+    .logo-footer{
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-footer img{
+        width: 55px;
+        height: 55px;
+    }
+    .logo-footer h2{
+        margin: 0px 5px;
+        font-weight: 550;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+
+
+
+    .AtrixDev_footer{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .AtrixDev_footer h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .AtrixDev_footer div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+
+    .Services{
+        /* border: 2px solid green; */
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Services h3{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: 400;
+        /* border: 2px solid red; */
+    }
+    .Services div h5{
+        /* border: 2px solid red; */
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+
+
+    .follow{
+        /* border: 2px solid green; */
+        width: 50%;
+    }
+    .follow h3{
+        margin-left: 60px;
+        text-decoration: underline;
+        margin-top: 50px;
+        font-weight: 400;
+    }
+    .follow div{
+        margin-left: 60px;
+    }
+    .follow div i{
+        margin: 0px 15px;
+        font-size: 20px;
+    }
+
+
+}
+
+.typing_anim{
+    color: green;
+    font-weight: 100;
+}

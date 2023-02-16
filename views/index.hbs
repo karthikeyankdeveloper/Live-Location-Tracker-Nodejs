@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Lottie Files -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" href="/raw/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- For PreLoader -->
+
+    <div class="preloader">
+        <lottie-player src="lottie/loading.json" background="transparent" speed="2.5" style="width: 50px; height: 50px;"
+            loop autoplay>
+        </lottie-player>
+    </div>
+
+
+    <!-- Main Content-->
+    <section class="content_page">
+        <!-- Floater -->
+        <div class="floater">
+            <div>
+                <i class="fa-solid fa-headset"></i>
+            </div>
+        </div>
+
+        <div class="message_landing_page">
+            <h3>We're open and available for takeaway & delivery. <a href="buy.html">Order Now</a></h3>
+        </div>
+
+
+        <!-- HEADER-->
+        <header>
+            <nav>
+                <div class="icons">
+                    <img src="raw/logo.png" alt="" width="50px" height="53px">
+                    <h3 style="font-weight: 500; padding-top: 5px;"> &nbsp;&nbsp;Tracker</h3>
+                </div>
+                <ul>
+                    <li><a class="active">HOME</a></li>
+                    {{#if session.user}}
+                        <li id="dashboard_user_anchor"><a href="#">DASHBOARD(User)</a></li>
+                        <li id="logout_anchor"><a href="/logout">LOGOUT</a></li>
+                    {{else if session.admin}}
+                        <li id="dashboard_admin_anchor"><a href="#">DASHBOARD(Admin)</a></li>
+                        <li id="logout_anchor"><a href="/logout">LOGOUT</a></li>
+                    {{else}}
+                        <li id="login_anchor"><a href="/login">LOGIN</a></li>
+                    {{/if}}                    
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="top_bar_landing">
+
+            <div class="first_50_top_bar_landing">
+                <img src="/raw/documentation.png" alt="document image">&nbsp;&nbsp;&nbsp;
+                <h1><span class="span_one">T</span>rack Your Day &<br>Be <span class="span_two"
+                        id="span_two"></span><span class="typing_anim" id="typing_anim">|</span></h1>
+            </div>
+
+
+            <div class="second_50_top_bar_landing">
+
+                <div class="second_50_div">
+                    <h3 style="text-align: center;">Track Here !</h3>
+                    <form action="" method="post">
+                        <div>
+                            <input type="text" name="" id="" placeholder="Enter UID" required>
+                        </div>
+                        <div>
+                            <button type="submit"><i class="fa-solid fa-location-dot"></i> TRACK</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content_description">
+
+            <h3 class="content_description_top_h3"> HOW&nbsp;IT&nbsp;WORKS</h3>
+            <p class="content_description_top_p">Learn more about our feature</p>
+
+
+            <div class="how_it_work">
+
+                <div class="how_it_work_sub">
+
+                    <div class="how_work_card">
+                        <div class="how_work_img">
+                            <img src="/raw/kit.jpg" alt="">
+                        </div>
+                        <div class="how_work_desc">
+                            <h4>NodeMcu</h4>
+                            <p>NodeMCU enables microcontroller programming with Lua and Arduino IDE.</p>
+                        </div>
+                    </div>
+                    <div class="how_work_arrow"><i class="fa-solid fa-share"></i></div>
+
+                    <!-- card -->
+                    <div class="how_work_card">
+                        <div class="how_work_img">
+                            <img src="/raw/compass.png" alt="">
+                        </div>
+                        <div class="how_work_desc">
+                            <h4>Lat & Log</h4>
+                            <p>Latitude and longitude are coordinates for geographic location on Earth.</p>
+                        </div>
+                    </div>
+                    <div class="how_work_arrow"><i class="fa-solid fa-share"></i></div>
+
+                    <!-- card -->
+                    <div class="how_work_card">
+                        <div class="how_work_img">
+                            <img src="/raw/cloud.png" alt="">
+                        </div>
+                        <div class="how_work_desc">
+                            <h4>Database</h4>
+                            <p>A database stores, organizes and retrieves data efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="how_work_arrow"><i class="fa-solid fa-share"></i></div>
+
+                    <div class="how_work_card">
+                        <div class="how_work_img">
+                            <img src="/raw/map.png" alt="">
+                        </div>
+                        <div class="how_work_desc">
+                            <h4>Map</h4>
+                            <p>Maps display geographic information and locations visually.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+
+            <div class="footer_logo">
+
+                <div class="footer_logo_sub">
+                    <div class="logo-footer">
+                        <img src="/raw/logo.png" alt="">
+                        <h2>AtrixDev</h2>
+                    </div>
+                    <p>They offer services such as web development, mobile app development, and cloud solutions.</p><br>
+                    <span>-karthikeyankdeveloper@outlook.com</span><br>
+                    <span>-karthikeyankdeveloper@gmail.com</span><br>
+                </div>
+
+            </div>
+            <div class="AtrixDev_footer">
+                <h3>Tracker</h3>
+                <div>
+                    <a href="#"><h5>Home</h5></a>  
+                    <a href="#"><h5>Track</h5></a>
+                    <a target="_blank" href="https://play.google.com/about/play-terms/"><h5>Term & condition</h5></a>
+                    <a target="_blank" href="https://about.google/"><h5>About</h5></a>
+                </div>
+            </div>
+            <div class="Services">
+                <h3>Services</h3>
+                <div>
+                    <a target="_blank" href="https://design.google/about/"><h5>Design</h5></a>
+                    <a target="_blank" href="https://developers.google.com/"><h5>Development</h5></a>
+                    <a target="_blank" href="https://cloud.google.com/deploy"><h5>Deploy,Crashlytics</h5></a>
+                    <a target="_blank" href="https://analytics.google.com/analytics/web/"><h5>Analytics</h5></a>
+                    
+                </div>
+            </div>
+
+
+            <div class="follow">
+                <h3>Follow</h3>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/karthikeyan-developer/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://play.google.com/store/apps/developer?id=AtrixDev"><i class="fa-brands fa-google-play"></i></a>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Google%2B"><i class="fa-brands fa-square-google-plus"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="extra_for_mobile"></div>
+
+    </section>
+
+    <script>
+        $(window).on('load', setTimeout(function () {
+            $(".preloader").fadeOut(1000);
+            $(".content_page").fadeIn(1000);
+        }, 500))
+    </script>
+
+    <script>
+        var i = 0;
+        var text = document.getElementById('span_two');
+        var dat = "Productive";
+        setTimeout(runthis, 3000);
+        function runthis() {
+            if (dat.length != i) {
+                text.innerHTML = dat.substring(0, 1 + i++);
+                setTimeout(runthis, 110);
+            }
+        }
+
+        var j = 0;
+        var typinganim = document.getElementById('typing_anim');
+
+        oppac();
+        function oppac() {
+            if (j == 0) {
+                typinganim.style.opacity = j++;
+                setTimeout(oppac, 350);
+            } else {
+                typinganim.style.opacity = j--;
+                setTimeout(oppac, 350);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
