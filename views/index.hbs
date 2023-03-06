@@ -53,10 +53,10 @@
                 <ul>
                     <li><a class="active">HOME</a></li>
                     {{#if session.user}}
-                        <li id="dashboard_user_anchor"><a href="#">DASHBOARD(User)</a></li>
+                        <li id="dashboard_user_anchor"><a href="/userdashboard">DASHBOARD(User)</a></li>
                         <li id="logout_anchor"><a href="/logout">LOGOUT</a></li>
                     {{else if session.admin}}
-                        <li id="dashboard_admin_anchor"><a href="#">DASHBOARD(Admin)</a></li>
+                        <li id="dashboard_admin_anchor"><a href="/admindashboard">DASHBOARD(Admin)</a></li>
                         <li id="logout_anchor"><a href="/logout">LOGOUT</a></li>
                     {{else}}
                         <li id="login_anchor"><a href="/login">LOGIN</a></li>

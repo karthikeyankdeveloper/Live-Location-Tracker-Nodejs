@@ -15,7 +15,7 @@ var sender = nodemailer.createTransport({
     service:'gmail',
     auth:{
         user:'privateplatinum2020@gmail.com',
-        pass:'amuvttxzwnrzqrruatr'
+        pass:'amuvttxzwnrzqrru'
     }
 });
 
@@ -40,7 +40,7 @@ conn.getConnection((err,data)=>{
 
 global.session = {
     user:false,
-    admin:false,
+    admin:true,
     u_email:"",
     a_email:""
 };
@@ -51,7 +51,7 @@ global.session = {
 
 // --------------Index Page---------------
 app.get("/",(req,res)=>{
-    return res.render("index",{session:session});        
+    return res.render("index",{session:session});  
 });
 
 
@@ -77,10 +77,12 @@ app.post("/addlogin",(req,res)=>{
                     session.user = true;
                     session.admin = false;
                     session.u_email = login_email;
+                    return res.redirect("userdashboard");
                 }else if(data[0].ROLE=="admin"){
                     session.user = false;
                     session.admin = true;
                     session.a_email = login_email;
+                    return res.redirect("admindashboard");
                 }
                 res.setTimeout(2000,()=>{
                     res.redirect("/");
@@ -155,6 +157,24 @@ app.post("/otpverify",(req,res)=>{
 
 
 
+// --------------Admin DashBoard-----------
+app.get("/admindashboard",(req,res)=>{
+
+    var query = "SELECT * FROM USERDATA WHERE ROLE=?;";
+    conn.query(query,'user',(err,list_user_data)=>{
+        if(!err){
+            res.render("admindashboard",{session:session,data:list_user_data});
+        }
+    });
+    
+
+});
+
+
+// --------------User DashBoard-----------
+app.get("/userdashboard",(req,res)=>{
+    res.render("userdashboard",{session:session});
+});
 
 
 //---------------------LOGOUT-------

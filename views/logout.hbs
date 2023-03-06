@@ -82,9 +82,9 @@
                 <ul>
                     <li><a href="/">HOME</a></li>
                     {{#if session.user}}
-                        <li id="dashboard_user_anchor"><a href="#">DASHBOARD(User)</a></li> 
+                        <li id="dashboard_user_anchor"><a href="/userdashboard">DASHBOARD(User)</a></li> 
                     {{else if session.admin}}
-                        <li id="dashboard_admin_anchor"><a href="#">DASHBOARD(Admin)</a></li>
+                        <li id="dashboard_admin_anchor"><a href="/admindashboard">DASHBOARD(Admin)</a></li>
                     {{else}}
                         <script>location.replace('/');</script>
                     {{/if}} 
