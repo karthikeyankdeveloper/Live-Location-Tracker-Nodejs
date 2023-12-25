@@ -164,20 +164,20 @@ html,body{
 
 
 
-    .AtrixDev_footer{
+    .tracker_footer{
         /* border: 2px solid green; */
         /* width: 25%; */
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .AtrixDev_footer h3{
+    .tracker_footer h3{
         text-decoration: underline;
         text-align: center;
         font-weight: 400;
         /* border: 2px solid red; */
     }
-    .AtrixDev_footer div h5{
+    .tracker_footer div h5{
         /* border: 2px solid red; */
         text-align: center;
         font-weight: 300;
@@ -374,20 +374,20 @@ html,body{
 
 
 
-    .AtrixDev_footer{
+    .tracker_footer{
         /* border: 2px solid green; */
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .AtrixDev_footer h3{
+    .tracker_footer h3{
         text-decoration: underline;
         text-align: center;
         font-weight: 400;
         /* border: 2px solid red; */
     }
-    .AtrixDev_footer div h5{
+    .tracker_footer div h5{
         /* border: 2px solid red; */
         text-align: center;
         font-weight: 300;
@@ -614,20 +614,20 @@ html,body{
 
 
 
-    .AtrixDev_footer{
+    .tracker_footer{
         /* border: 2px solid green; */
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .AtrixDev_footer h3{
+    .tracker_footer h3{
         text-decoration: underline;
         text-align: center;
         font-weight: 400;
         /* border: 2px solid red; */
     }
-    .AtrixDev_footer div h5{
+    .tracker_footer div h5{
         /* border: 2px solid red; */
         text-align: center;
         font-weight: 300;
@@ -908,20 +908,20 @@ html,body{
 
 
 
-    .AtrixDev_footer{
+    .tracker_footer{
         /* border: 2px solid green; */
         width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .AtrixDev_footer h3{
+    .tracker_footer h3{
         text-decoration: underline;
         text-align: center;
         font-weight: 400;
         /* border: 2px solid red; */
     }
-    .AtrixDev_footer div h5{
+    .tracker_footer div h5{
         /* border: 2px solid red; */
         text-align: center;
         font-weight: 300;
